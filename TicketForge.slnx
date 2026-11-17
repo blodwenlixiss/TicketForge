@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/Modules/" />
+  <Folder Name="/Modules/Catalog/">
+    <Project Path="Modules/Catalog/Catalog.Application/Catalog.Application.csproj" />
+    <Project Path="Modules/Catalog/Catalog.Contracts/Catalog.Contracts.csproj" />
+    <Project Path="Modules/Catalog/Catalog.Domain/Catalog.Domain.csproj" />
+    <Project Path="Modules/Catalog/Catalog.Infrastructure/Catalog.Infrastructure.csproj" />
+    <Project Path="Modules/Catalog/Catalog.Module/Catalog.Module.csproj" />
+  </Folder>
+  <Project Path="TicketForge.WebApi/TicketForge.WebApi.csproj" />
+</Solution>
