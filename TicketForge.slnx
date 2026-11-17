@@ -7,5 +7,8 @@
     <Project Path="Modules/Catalog/Catalog.Infrastructure/Catalog.Infrastructure.csproj" />
     <Project Path="Modules/Catalog/Catalog.Module/Catalog.Module.csproj" />
   </Folder>
+  <Folder Name="/Solution Items/">
+    <File Path="compose.yaml" />
+  </Folder>
   <Project Path="TicketForge.WebApi/TicketForge.WebApi.csproj" />
 </Solution>
