@@ -30,7 +30,7 @@ app.MapGet("/weatherforecast", () =>
         ))
         .ToArray();
     return forecast;
-})
+}) 
 .WithName("GetWeatherForecast");
 
 app.Run();
