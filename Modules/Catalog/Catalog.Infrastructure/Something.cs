@@ -1,6 +1,6 @@
 ﻿namespace Catalog.Infrastructure;
 
-public class Class1
+public class Something
 {
 
 }
