@@ -1,4 +1,4 @@
-﻿using Catalog.Infrastructure.DbConfiguration;
+﻿using Catalog.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
@@ -21,7 +21,8 @@ public static class CatalogModule
         services.AddDbContext<CatalogDbContext>((sp, options) =>
         {
             var db = sp.GetRequiredService<IOptions<DatabaseOptions>>().Value;
-            options.UseNpgsql(db.ConnectionString);
+            options.UseNpgsql(db.ConnectionString, npgsql =>
+                npgsql.MigrationsHistoryTable("__EFMigrationsHistory", "catalog"));
         });
         return services;
     }

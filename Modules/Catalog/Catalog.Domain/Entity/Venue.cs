@@ -2,9 +2,9 @@
 
 public class Venue
 {
-    private const int NameMaxLength = 50;
-    private const int AddressMaxLength = 100;
-    private const int CityMaxLength = 50;
+    public const int NameMaxLength = 50;
+    public const int AddressMaxLength = 100;
+    public const int CityMaxLength = 50;
 
     public Guid Id { get; private set; }
     public string Name { get; private set; } = string.Empty;
